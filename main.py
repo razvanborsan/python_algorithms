@@ -7,7 +7,7 @@ import mergeSort
 import karatsuba
 import invertedCounter
 import strassenMultiplication
-
+import closestPairInAPlane
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -16,5 +16,11 @@ if __name__ == '__main__':
     # print(karatsuba.Karatsuba(3141592653589793238462643383279502884197169399375105820974944592,
     #                           2718281828459045235360287471352662497757247093699959574966967627))
     # print(invertedCounter.count_inversions([1, 3, 5, 2, 4, 6]))
-    print(strassenMultiplication.strassen(np.array([[2, 4], [3, 5]]), np.array([[5, 3], [6, 8]])))
+    # print(strassenMultiplication.strassen(np.array([[2, 4], [3, 5]]), np.array([[5, 3], [6, 8]])))
+    P = [closestPairInAPlane.Point(2, 3), closestPairInAPlane.Point(12, 30),
+         closestPairInAPlane.Point(11, 10),
+         closestPairInAPlane.Point(40, 50), closestPairInAPlane.Point(5, 4),
+         closestPairInAPlane.Point(12, 10), closestPairInAPlane.Point(3, 4)]
+    closestPairInAPlane.closest(P)
+
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
