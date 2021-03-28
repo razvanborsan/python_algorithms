@@ -30,3 +30,8 @@ def count_inversions(elements):
     right_sorted, right_inverted = count_inversions(elements[middle:])
     elem_sorted, split_inverted = merge_and_count_split_inv(left_sorted, right_sorted)
     return elem_sorted, left_inverted + right_inverted + split_inverted
+
+
+def total_count(elements):
+    sorty, count = count_inversions([int(line) for line in elements])
+    return count
